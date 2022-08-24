@@ -1,0 +1,170 @@
+
+:root {
+    --clr-primary-100: #ECF0F1;
+    --clr-primary-200: #e0e6e9;
+    --clr-primary-300: #FA8C61;
+    --clr-primary-400: #EF6D3C;
+    --clr-primary-500: #91C5AA;
+    --clr-primary-600: #7B9B96;
+    --clr-primary-700: #6a4b9b;
+
+    --ff-primary: helvetica, sans-serif; 
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+.hh2,
+.hh3 {
+    color: var(--clr-primary-100);
+}
+
+
+.s1box1 {
+    background-color: var(--clr-primary-700);
+}
+
+.s1box2 {
+    background-color: var(--clr-primary-200);
+}
+
+.s1btitle, 
+.s1ulbox {
+    background-color: var(--clr-primary-100);
+}
+
+.header {
+    background-image: url(img/img1.jpg);
+    background-position: center;
+}
+
+.s1title2 {
+    font-weight: 300;
+}
+
+.headerbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.footer {
+    background-image: url(img/img3.jpg);
+    background-position: center;
+}
+
+.button1,
+.button2 {
+  background-color: white;
+  color: black;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 2px solid #ff6843;
+  transition-duration: 0.4s
+}
+
+.button2 {
+    border: 2px solid #ed13c1;
+}
+
+.button1:hover {
+    background-color: #ff6843;
+    color: white;
+}
+
+.button2:hover {
+    background-color: #ed13c1;
+    color: white;
+  }
+
+.htbox {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.s1btitle {
+    align-items: center;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.s1box1 {
+    padding-top: 14px;
+}
+
+.s1box2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px 25px 0 0;
+}
+
+.s1ulbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2px;
+}
+
+.s1ul li { 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}    
+
+ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.s1gbox2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.s1gcard1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 200px;
+    min-height: 80px;
+    background: #fff;
+}
+
+.cimg1 {
+    max-width: 10rem;
+}
+
+.cn1 {
+    padding: 1rem;;
+}
+
+.cm1:hover {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 255, 208);
+}
+
+.cm1:focus {
+    background-color: rgb(255, 89, 0);
+}
+
+.logo,
+.hprof {
+    width: 60px;
+}
