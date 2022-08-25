@@ -62,7 +62,8 @@ h3 {
 
 .footer {
     background-image: url(img/img3.jpg);
-    background-position: center;
+    background-position: top;
+    margin-top: 0;
 }
 
 .button1,
@@ -104,13 +105,15 @@ h3 {
 }
 
 .s1box1 {
-    padding-top: 14px;
+    padding-top: 14px; 
+    padding-bottom: 14px;
 }
 
 .s1box2 {
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 25px;
+    padding-bottom: 25px;
 }
 
 .s1ulbox {
@@ -124,6 +127,7 @@ h3 {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    flex-wrap: wrap;
 }    
 
 ul {
@@ -132,17 +136,42 @@ ul {
     justify-content: space-around;
 }
 
+.s1gbox {
+    padding: 20px;
+}
+
 .s1gbox2 {
     display: grid;
     grid-template-columns: auto auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 2rem;
 }
+
+
+@media (max-width: 1129px) {
+    .s1gbox2 {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 2rem;
+      row-gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 790px) {
+    .s1gbox2 {
+      display: grid;
+      grid-template-columns: auto;
+      column-gap: 2rem;
+      row-gap: 2rem;
+    }
+  }
+
 
 .s1gcard1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-width: 200px;
-    min-height: 80px;
     background: #fff;
 }
 
@@ -151,17 +180,62 @@ ul {
 }
 
 .cn1 {
-    padding: 1rem;;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex: 1;
+}
+
+.cm1 {
+    border-radius: 3px;
 }
 
 .cm1:hover {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background-color: rgb(0, 255, 208);
+}
+
+.cm1: :active {
+    background-color: rgb(222, 255, 208);
 }
 
 .cm1:focus {
     background-color: rgb(255, 89, 0);
+}
+
+.cb1 {
+    padding-right: 9px;
+}
+
+.fh1 {
+    display: flex;
+}
+
+.fbox2 {
+    text-align: center;
+    padding: .6em;
+    margin: 0;
+}
+
+.fbox3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cimgb {
+    margin: 8px;
+    margin-bottom: 0px;
+}
+
+.randome {
+    padding: 1rem;
+}
+
+.input {
+    width: 55%;
+    padding: 12px 20px;
+    box-sizing: border-box;
 }
 
 .logo,
